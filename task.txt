@@ -1,0 +1,32 @@
+The exercise:
+
+ 
+
+Implement a Python script, that searches for lines matching regular expression -r (--regex) in file/s -f (--files).
+
+Use STDIN if file/s option wasn’t provided.
+
+ 
+
+Assume that input is ASCII, you don't need to deal with a different encoding.
+
+If a line matches, print it. Please print the file name and the line number for every match.
+
+
+Script accept list optional parameters which are mutually exclusive:
+-u ( --underscore ) which prints '^' under the matching text
+-c ( --color ) which highlight matching text [1]
+-m ( --machine ) which generate machine readable output
+                  format: file_name:no_line:start_pos:matched_text
+
+Multiple matches on a single line are allowed, without overlapping.
+
+The script should be compatible in line with PEP8 coding guidelines.
+
+Please add proper documentation and error handling.
+
+Hint: It is recommended to use a module for parsing the command line
+arguments and the "re" module for matching the pattern.
+Try to use OOP in order to encapsulate differences between output formats.
+
+Please put into comments what design pattern it follows.
